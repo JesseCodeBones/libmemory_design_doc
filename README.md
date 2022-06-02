@@ -1,7 +1,7 @@
 # libmemory_design_doc
 
-## debug doc
+## Debug doc
 [Document link](https://github.com/JesseCodeBones/libmemory_design_doc/blob/main/debug/README.md)
 
-## freelist doc
+## Freelist doc
 [Document link](https://github.com/JesseCodeBones/libmemory_design_doc/blob/main/freelist/malloc_free/README.md)
