@@ -3,7 +3,7 @@
 ## Memory Management
 
 ### Description
-current MM solution of Assembly Script MM solution is Two-Level Segregate Fit ([TLSF](http://www.gii.upv.es/tlsf/)).  
+current Assembly Script MM solution is Two-Level Segregate Fit ([TLSF](http://www.gii.upv.es/tlsf/)).  
 in addition, AssemblyScript will visit the tail position with follow structure.  
 ```
 // ╒════════════════════ Block layout (32-bit) ════════════════════╕
