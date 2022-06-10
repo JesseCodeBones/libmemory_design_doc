@@ -22,7 +22,7 @@
   |types.ts           |   96.39 |    86.13 |   94.28 |   96.39 |
   |util.ts            |     100 |      100 |     100 |     100 |
 
-## focus times
+## TODO files
 |File        | covered lines / total lines|
 |------------|----------------------------|
 |builtins.ts | 8012/10414|
