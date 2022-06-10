@@ -35,7 +35,6 @@ As WebAssembly regard one memory page as 64K, so every time memery grow, it will
     5. __unpin(ptr: usize): void - **5 days** (*GC related*)  
     6. __collect(): void - **10 days** (*GC related*)  
 3. Unit Test and Integration test  **10 days**  
-    * currently Assembly does not have good structure for RT test  
 
 ### Total  
 **55** days, not sure if we still need some buffer to this task.  
