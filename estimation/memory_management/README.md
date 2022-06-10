@@ -26,7 +26,7 @@ in addition, AssemblyScript will visit the tail position with follow structure.
 As WebAssembly regard one memory page as 64K, so every time memery grow, it will visit the first part and latest part, which will cause confliction to CDC linear memory strategy.  
 
 ### estimation
-1. Solution Determain (currently we want [RTOS](https://github.com/embeddedartistry/libmemory), but could change if it not fit our need) and Premary POC preparing - **10 days**  
+1. Solution Determination (currently we want [RTOS](https://github.com/embeddedartistry/libmemory), but could change if it not fit our need) and Premary POC preparing - **10 days**  
 2. API function implementation:  
     1. __new(size: usize, id: i32): usize  - **5 days**  
     2. __renew(oldPtr: usize, size: usize): usize - **5 days**  
