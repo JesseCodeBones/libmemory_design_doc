@@ -27,14 +27,19 @@ As WebAssembly regard one memory page as 64K, so every time memery grow, it will
 
 ### estimation
 1. Solution Determination (currently we want [RTOS](https://github.com/embeddedartistry/libmemory), but could change if it not fit our need) and primary POC preparing - **10 days**  
-2. API function implementation:  
-    1. __new(size: usize, id: i32): usize  - **5 days**  
-    2. __renew(oldPtr: usize, size: usize): usize - **5 days**  
-    3. __visit(ptr: usize, cookie: i32): void - **5 days** (*GC related*)
-    4. __pin(ptr: usize): usize - **5 days** (*GC related*)  
-    5. __unpin(ptr: usize): void - **5 days** (*GC related*)  
-    6. __collect(): void - **10 days** (*GC related*)  
-3. Unit Test and Integration test  **10 days**  
+2. main feature:
+    1. Memory management data structure design - **5 days**
+    2. "initialize" and "growMemory" implementation - **5 days**
+    3. "removeBlock" and "freeBlockMerge" implementation - **5 days**
+    4. "searchBlock" implementation - **2 days**
+    5. "prepareBlock" implementation - **2 days**  
+3. API function implementation:  
+    1. __alloc(size: usize): usize  - **2 days**  
+    2. __realloc(ptr: usize, size: usize): usize - **3 days**  
+    3. __free(ptr: usize): void - **2 days** (*GC related*)
+    4. __shrink(size: usize): usize - **3 days** (*GC related*)  
+4. Integration with GC functionality - **10 days**
+5. Unit Test and Integration test  **5 days**  
 
 ### Total  
-**55** days, not sure if we still need some buffer to this task.  
+**54** days  
